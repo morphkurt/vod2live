@@ -29,7 +29,7 @@ const countDownPath = process.env.COUNTDOWNPATH || "5mincount";
 const preSlideSegments = Number(process.env.PRESLIDESEGMENTS) || 10;
 const postSlideSegments = Number(process.env.POSTSLIDESEGMENTS) || 10;
 const liveWindow = Number(process.env.LIVEWINDOW) || 60;
-var domain = process.env.ORIGIN || 'https://afl-vod-multi-001-uptls.akamaized.net'
+var domain = process.env.ORIGIN || 'https://vod1.syd2.vhe.telstra.com'
 var slideDomain = process.env.SLIDEDOMAIN || 'http://192.168.88.203:8080'
 
 app.get('*/index.m3u8', (req, res) => {
