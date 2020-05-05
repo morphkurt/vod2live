@@ -23,14 +23,14 @@ const DEBUG = (process.env.DEBUG == 'true') || true;
 const countdown = Number(process.env.COUNTDOWN) || 1800;
 const segmentLength = Number(process.env.SEGMENTLENGTH) || 6;
 const epochstart = Number(process.env.EPOCHSTART) || 1588514400;
-const preSlidePath = process.env.PRESLIDEPATH || "pre_slide";
-const postSlidePath = process.env.POSTSLIDEPATH || "post_slide";
-const countDownPath = process.env.COUNTDOWNPATH || "5mincount";
+const preSlidePath = process.env.PRESLIDEPATH || "lte/ffademo/post_slide/pre_slide";
+const postSlidePath = process.env.POSTSLIDEPATH || "lte/ffademo/post_slide/post_slide";
+const countDownPath = process.env.COUNTDOWNPATH || "lte/ffademo/post_slide/5mincount";
 const preSlideSegments = Number(process.env.PRESLIDESEGMENTS) || 10;
 const postSlideSegments = Number(process.env.POSTSLIDESEGMENTS) || 10;
 const liveWindow = Number(process.env.LIVEWINDOW) || 60;
 var domain = process.env.ORIGIN || 'http://vod1.syd2.vhe.telstra.com'
-var slideDomain = process.env.SLIDEDOMAIN || 'http://192.168.88.203:8080'
+var slideDomain = process.env.SLIDEDOMAIN || 'http://lteborigin.vos.bigpond.com/'
 
 app.get('*/index.m3u8', (req, res) => {
     addCors(res);
